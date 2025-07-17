@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Squashinator",
+  "version": "1.0",
+  "description": "A Chrome Extension that brings GitHub-style 'Squash and Merge' functionality to Bitbucket pull requests.",
+  "content_scripts": [
+    {
+      "matches": ["https://bitbucket.org/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "permissions": []
+}
